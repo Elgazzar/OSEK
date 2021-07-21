@@ -6,6 +6,9 @@
 *.ko
 *.obj
 *.elf
+*.crf
+*.axf
+*.htm
 
 # Linker output
 *.ilk

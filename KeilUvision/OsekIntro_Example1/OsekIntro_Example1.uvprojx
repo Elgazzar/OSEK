@@ -10,7 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::.\ARMCC</pCCUsed>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -138,7 +138,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\oil;..\..\OsekLib</IncludePath>
+              <IncludePath>..\..\oil;..\..\OsekLib;.\OS</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -389,16 +389,6 @@
               <FilePath>.\OsekIntro_Example1.c</FilePath>
             </File>
             <File>
-              <FileName>OsCfg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\oil\OsCfg.c</FilePath>
-            </File>
-            <File>
-              <FileName>OsCfg.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\oil\OsCfg.h</FilePath>
-            </File>
-            <File>
               <FileName>counter.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\OsekLib\counter.c</FilePath>
@@ -433,6 +423,16 @@
               <FileType>4</FileType>
               <FilePath>..\..\OsekLib\OsekLib.lib</FilePath>
             </File>
+            <File>
+              <FileName>OsCfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OS\OsCfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>OsCfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OS\OsCfg.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -459,11 +459,6 @@
     <Layers>
       <Layer>
         <LayName>&lt;Project Info&gt;</LayName>
-        <LayDesc></LayDesc>
-        <LayUrl></LayUrl>
-        <LayKeys></LayKeys>
-        <LayCat></LayCat>
-        <LayLic></LayLic>
         <LayTarg>0</LayTarg>
         <LayPrjMark>1</LayPrjMark>
       </Layer>
